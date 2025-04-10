@@ -71,6 +71,8 @@
 
 - Usando o dataset da equipe (`data3.txt`) e o Perceptron desenvolvido, realizaram-se diferentes experimentos de aprendizado, dos quais se extraíram a média e o desvio padrão da quantidade de ajustes efetuados no vetor de pesos e o menor número de épocas até a convergência nestas iterações;
 
+- Foram executadas 10 repetições de cada configuração _**η×I**_ = {0.4, 0.1, 0.01}× {(−100,+ 100),(−0.5,+ 0.5)}
+
 - Os resultados foram exibidos com o auxílio da biblioteca `prettytable`;
 
 <h3>Parte III – Validação Holdout em Problema Não-Linearmente Separável</h3>
@@ -79,7 +81,24 @@
 
 <br/>
 
-<h2>🧠 Resultados</h2>
+<h2>✏️ Exemplo de saída de experimentação</h2>
+
+| Taxa de Aprendizado | Intervalo de Pesos | Quantidade de Ajustes       | Menor número de épocas para convergência|
+|-|-|-|-|
+|η = 0.4|(-0.5, 0.5)|8.181 ± 3.039|3|
+|η = 0.4|(-100, 100)|249.545 ± 125.187|5|
+|η = 0.1|(-0.5, 0.5)|11.181 ± 4.529|2|
+|η = 0.1|(-100, 100)|1101.181 ± 731.175|10|
+|η = 0.01|(-0.5, 0.5)|58.363 ± 29.105| 5                       |
+| η = 0.01|(-100, 100)|12325.363 ± 5644.303| 109                     |
+
+<p>
+A taxa de aprendizado intermediária de valor η = 0.1 com o intervalo de pesos (-0.5, 0.5) foi a melhor configuração encontrada pelos seus resultados constantemente sendo os mais rápidos.
+</p>
+
+<br/>
+
+<h2>🧠 Resultados do Problema Não-Linearmente Separável</h2>
 
 |Métricas|Valor|
 |-|-|
@@ -88,9 +107,17 @@
 |Revocação|0.9333|
 |F1-score|0.9180|
 
+<p>
+O Perceptron apresentou uma performance sólida no conjunto de testes, com métricas que evidenciam boa generalização.
+</p>
+
 <br/>
 
 <h2>📌 Observações</h2>
+
+<h3>Melhor configuração</h3>
+
+- A melhor fonfiguração na parte de experimentação foi aquela que demonstrou mais estabilidade nos resultados obtidos e rapidez na convergência;
 
 <h3>Limitações do Perceptron</h3>
 
