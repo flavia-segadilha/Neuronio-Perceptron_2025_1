@@ -117,7 +117,7 @@ O Perceptron apresentou uma performance sólida no conjunto de testes, com métr
 
 <h3>Melhor configuração</h3>
 
-- A melhor fonfiguração na parte de experimentação foi aquela que demonstrou mais estabilidade nos resultados obtidos e rapidez na convergência;
+- A melhor configuração na parte de experimentação foi aquela que demonstrou mais estabilidade nos resultados obtidos e rapidez na convergência;
 
 <h3>Limitações do Perceptron</h3>
 
